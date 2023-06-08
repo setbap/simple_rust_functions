@@ -14,4 +14,12 @@ fn main() {
     let mut arr = vec!["sina", "Aba", "Taghi", "zeyo", "ada", "taGHo"];
     sort_str(&mut arr);
     print_arr(arr);
+    let message = String::from("ab").to_morse_code();
+    print_morse(message);
+    let deck = Hand::new(vec![
+        BlackJackCards::Queen,
+        BlackJackCards::Two,
+        BlackJackCards::Ace,
+    ]);
+    print_str(deck.value());
 }
